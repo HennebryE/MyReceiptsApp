@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.user.receipts.nfc.NFCReader">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true">
+
+
+        <TextView
+            android:id="@+id/readtagShop"
+            android:layout_width="234dp"
+            android:layout_height="36dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/receiptsDate"
+            android:layout_marginBottom="225dp"
+            android:textSize="30sp"
+            tools:layout_editor_absoluteX="71dp"
+            tools:layout_editor_absoluteY="265dp"
+            android:layout_alignLeft="@+id/receiptsDate" />
+
+        <TextView
+            android:id="@+id/readtagPrice"
+            android:layout_width="180dp"
+            android:layout_height="35dp"
+            android:layout_alignStart="@+id/readtagShop"
+            android:layout_below="@+id/priceTV"
+            android:layout_marginTop="-177dp"
+            android:textSize="30sp"
+            tools:layout_editor_absoluteX="116dp"
+            tools:layout_editor_absoluteY="330dp"
+            android:layout_alignLeft="@+id/readtagShop" />
+
+        <TextView
+            android:id="@+id/receiptsDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/readtagReceiptNo"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/readtagReceiptNo"
+            android:layout_marginTop="191dp"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="72dp"
+            tools:layout_editor_absoluteY="220dp" />
+
+        <TextView
+            android:id="@+id/receiptsTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/readtagReceiptNo"
+            android:layout_alignRight="@+id/readtagReceiptNo"
+            android:layout_alignTop="@+id/receiptsDate"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="195dp"
+            tools:layout_editor_absoluteY="220dp" />
+
+        <TextView
+            android:id="@+id/readtagReceiptNo"
+            android:layout_width="201dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="48dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="82dp"
+            android:textSize="30sp"
+            tools:layout_editor_absoluteX="114dp"
+            tools:layout_editor_absoluteY="382dp" />
+
+        <Button
+            android:id="@+id/buttonView"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="54dp"
+            android:background="@color/colorOfApp"
+            android:text="@string/view"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            android:textStyle="italic|bold" />
+
+        <ImageView
+            android:id="@+id/tapNFC"
+            android:layout_width="290dp"
+            android:layout_height="295dp"
+            android:layout_below="@+id/recidTV"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/nfc_scan" />
+
+        <TextView
+            android:id="@+id/recidTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/readtagShop"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/readtagShop"
+            android:layout_marginTop="47dp" />
+
+        <TextView
+            android:id="@+id/DateAndTimeTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/readtagShop"
+            android:layout_marginTop="156dp"
+            android:layout_alignLeft="@+id/readtagShop" />
+
+        <TextView
+            android:id="@+id/shopTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/readtagShop"
+            android:layout_marginBottom="255dp"
+            android:layout_alignLeft="@+id/readtagShop" />
+
+        <TextView
+            android:id="@+id/priceTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/readtagShop"
+            android:layout_marginBottom="177dp"
+            android:layout_alignLeft="@+id/readtagShop" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottomBar">
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.BottomNavigationView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/bottomNav"
+                android:background="@drawable/toolbar_back"
+                app:menu="@menu/buttom_nav_menu"
+                app:itemBackground="@color/colorOfNavBar"
+                app:itemIconTint="@color/colorWhite"
+                app:itemTextColor="@color/colorWhite">
+            </android.support.design.widget.BottomNavigationView>
+
+        </android.support.design.widget.CoordinatorLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

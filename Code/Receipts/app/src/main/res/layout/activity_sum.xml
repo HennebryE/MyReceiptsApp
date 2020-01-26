@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true">
+
+            <TextView
+                android:id="@+id/sumTV"
+                android:layout_width="458dp"
+                android:layout_height="128dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="103dp"
+                android:background="@color/colorOfApp"
+                android:gravity="center"
+                android:text="0.0"
+                android:textColor="#ffffff"
+                android:textSize="70sp"
+                android:textStyle="italic|bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_alignParentLeft="true" />
+
+            <TextView
+                android:id="@+id/totalExp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/sumTV"
+                android:layout_alignParentStart="true"
+                android:text="Total Expenditure"
+                android:textColor="@color/colorBlack"
+                android:textSize="25sp"
+                android:textStyle="italic"
+                android:layout_alignParentLeft="true" />
+
+            <TextView
+                android:id="@+id/sumTVMonth"
+                android:layout_width="458dp"
+                android:layout_height="128dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="88dp"
+                android:background="@color/colorOfApp"
+                android:gravity="center"
+                android:text="0.0"
+                android:textColor="#ffffff"
+                android:textSize="70sp"
+                android:textStyle="italic|bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_alignParentLeft="true" />
+
+
+            <TextView
+                android:id="@+id/totalExpMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/sumTVMonth"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="-88dp"
+                android:text="Total Expenditure this Month"
+                android:textColor="@color/colorBlack"
+                android:textSize="25sp"
+                android:textStyle="italic"
+                android:layout_alignParentLeft="true" />
+
+            <!--<TextView-->
+            <!--android:id="@+id/limitTV"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_below="@+id/sumTV"-->
+            <!--android:text="Set Notification Price Limit"-->
+            <!--android:textColor="@color/colorBlack"-->
+            <!--android:textSize="15sp"-->
+            <!--android:textStyle="italic|bold" />-->
+
+            <!--<EditText-->
+            <!--android:id="@+id/limitET"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_below="@+id/limitTV"-->
+            <!--android:layout_marginStart="78dp"-->
+            <!--android:ems="10"-->
+            <!--android:inputType="textPersonName"-->
+            <!--android:text=""-->
+            <!--android:textSize="15sp"-->
+            <!--android:textStyle="italic|bold"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_marginLeft="78dp"-->
+            <!--tools:ignore="LabelFor" />-->
+
+            <!--<Button-->
+            <!--android:id="@+id/limitBtn"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_below="@+id/limitTV"-->
+            <!--android:layout_marginEnd="18dp"-->
+            <!--android:text="Enter"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_marginRight="18dp" />-->
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bottomBar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true">
+
+            <android.support.design.widget.BottomNavigationView
+                android:id="@+id/bottomNav"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/toolbar_back"
+                app:itemBackground="@color/colorOfNavBar"
+                app:itemIconTint="@color/colorWhite"
+                app:itemTextColor="@color/colorWhite"
+                app:menu="@menu/buttom_nav_menu" >
+            </android.support.design.widget.BottomNavigationView>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

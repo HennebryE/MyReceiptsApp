@@ -1,0 +1,67 @@
+<resources>
+    <!-- **** Manifest strings **** -->
+    <string name="app_name">MyReceiptsApp</string>
+    <string name="LoginAct">Login</string>
+    <string name="RegAct">Register</string>
+    <string name="homeAct">Home</string>
+    <string name="addReceiptAct">Tap NFC to Add Receipt</string>
+    <string name="receiptAct">Your Receipts</string>
+    <string name="receiptDetailsAct">Your Receipt</string>
+    <string name="calculationAct">Calculation</string>
+    <string name="hello">Receipts</string>
+    <string name="returnAct">Tap NFC to Return</string>
+    <string name="folderAct">Your Folders</string>
+    <string name="folderRecAct">Your Receipts in Folder</string>
+    <string name="shopAct">Recommended Shops</string>
+    <!-- ************************* -->
+
+    <string name="phone">Phone</string>
+    <string name="name">Name</string>
+    <string name="insert">Insert</string>
+    <string name="read">Read</string>
+    <string name="db">Database</string>
+
+    <string name="readtag">Reading tag</string>
+    <string name="view">View</string>
+
+    <string-array name="categories">
+        <item>Work</item>
+        <item>Rome</item>
+        <item>Coffee</item>
+    </string-array>
+
+    <!-- **** Login and Reg **** -->
+    <string name="hint_name">Name</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_confirm_password">Confirm Password</string>
+    <string name="text_login">Login</string>
+    <string name="text_register">Register</string>
+    <string name="error_message_name">Enter Full Name</string>
+    <string name="error_message_username">Enter Valid Username</string>
+    <string name="error_message_email">Enter Valid Email</string>
+    <string name="error_message_password">Enter Password</string>
+    <string name="success_message">Registration Successful! You can now login</string>
+    <string name="text_not_member">No account yet? Create one</string>
+    <string name="text_already_member">Already a member? Login</string>
+    <string name="error_username_exists">Username Already Exists</string>
+    <string name="error_password_match">Password Does Not Matches</string>
+    <string name="error_valid_email_password">Wrong Username or Password</string>
+    <string name="action_settings">Settings</string>
+    <!-- ************************* -->
+
+    <!-- **** Adding Receipt Activity **** -->
+    <string name="NFCRecid">Receipt Number</string>
+    <string name="NFCDAT">Date and Time</string>
+    <string name="NFCShop">Shop</string>
+    <string name="NFCPrice">Total Price</string>
+    <!-- ************************* -->
+
+    <!-- **** Return Activity **** -->
+    <string name="returnRecid">Receipt Number of Return</string>
+    <string name="returnProduct">Returned Product</string>
+    <string name="returnPrice">Returned Price</string>
+    <!-- ************************* -->
+
+</resources>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true">
+
+        <TextView
+            android:id="@+id/returnReceiptid2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="45sp"
+            app:layout_constraintStart_toStartOf="@+id/returnRecidTV"
+            app:layout_constraintTop_toBottomOf="@+id/returnRecidTV" />
+
+        <TextView
+            android:id="@+id/returnProductName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:textSize="35sp"
+            app:layout_constraintStart_toStartOf="@+id/tapNFCReturn"
+            app:layout_constraintTop_toBottomOf="@+id/returnProductTV" />
+
+        <TextView
+            android:id="@+id/returnProductPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            app:layout_constraintStart_toStartOf="@+id/tapNFCReturn"
+            app:layout_constraintTop_toBottomOf="@+id/returnPriceTV" />
+
+        <ImageView
+            android:id="@+id/tapNFCReturn"
+            android:layout_width="0dp"
+            android:layout_height="344dp"
+            android:layout_marginEnd="39dp"
+            android:layout_marginLeft="39dp"
+            android:layout_marginRight="39dp"
+            android:layout_marginStart="39dp"
+            android:layout_marginTop="80dp"
+            android:contentDescription="tapNFCReturn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/nfc_scan"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/returnRecidTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="72dp"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/tapNFCReturn"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/returnProductTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="192dp"
+            android:layout_marginTop="205dp"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tapNFCReturn"
+            app:layout_constraintStart_toStartOf="@+id/tapNFCReturn"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/returnPriceTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/tapNFCReturn"
+            app:layout_constraintTop_toBottomOf="@+id/returnProductName" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottomBar">
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <android.support.design.widget.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/bottomNav"
+            android:background="@drawable/toolbar_back"
+            app:menu="@menu/buttom_nav_menu"
+            app:itemBackground="@color/colorOfNavBar"
+            app:itemIconTint="@color/colorWhite"
+            app:itemTextColor="@color/colorWhite">
+        </android.support.design.widget.BottomNavigationView>
+
+        </android.support.design.widget.CoordinatorLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

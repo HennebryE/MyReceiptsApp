@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.user.receipts">
+
+    <!-- The NFC permission -->
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- Application only shows up on google Play for NFC hardware -->
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/euro"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:fullBackupContent="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".loginAndRegistration.LoginActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".loginAndRegistration.RegisterActivity"
+            android:label="@string/RegAct">
+        </activity>
+
+        <activity android:name=".MainActivity"
+            android:label="@string/homeAct">
+        </activity>
+
+        <activity android:name=".nfc.NFCReader"
+            android:label="@string/addReceiptAct">
+
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <!--<data android:scheme="vnd.android.nfc" />-->
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+
+        </activity>
+        
+        <activity android:name=".DisplayReceipts"
+            android:label="@string/receiptAct">
+        </activity>
+
+        <activity android:name=".DisplayReceiptDetails"
+            android:label="@string/receiptDetailsAct">
+        </activity>
+
+        <activity android:name=".SumActivity"
+            android:label="@string/calculationAct">
+        </activity>
+
+        <activity android:name=".nfc.ReturnActivity"
+            android:label="@string/returnAct">
+
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+
+        </activity>
+        
+        <activity android:name=".categories.CategoriesActivity"
+            android:label="@string/folderAct"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+
+        <activity android:name=".categories.DisplayFolderReceipts"
+            android:label="@string/folderRecAct">
+        </activity>
+
+        <activity android:name=".shops.ShopActivity"
+            android:label="@string/shopAct">
+        </activity>
+
+    </application>
+
+</manifest>

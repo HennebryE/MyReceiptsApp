@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/icShop"
+        android:icon="@drawable/ic_store"
+        android:title="">
+    </item>
+
+    <item
+        android:id="@+id/icReturnItem"
+        android:icon="@drawable/ic_return_product"
+        android:title="">
+    </item>
+
+    <item
+        android:id="@+id/icAdd"
+        android:icon="@drawable/ic_add"
+        android:title="">
+    </item>
+
+    <item
+        android:id="@+id/icReceipts"
+        android:icon="@drawable/ic_receipts"
+        android:title="">
+    </item>
+
+    <item
+        android:id="@+id/icFolder"
+        android:icon="@drawable/ic_folder"
+        android:title="">
+    </item>
+
+</menu>
